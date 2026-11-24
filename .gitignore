@@ -1,0 +1,21 @@
+# 凭证
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# 本地数据与缓存
+data/*.db
+data/*.sqlite3
+.streamlit/secrets.toml
+
+# 编辑器与系统
+.idea/
+.vscode/
+.DS_Store
