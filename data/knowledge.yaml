@@ -1,0 +1,12 @@
+- id: L2-01
+  name: LLM API 调用与参数
+  level: 2
+  prereq: []
+  interview_qs:
+    - temperature 调到 1.2 会怎样，什么场景该调高、什么场景必须调低？
+    - max_tokens 设得比回答需要的小，模型会怎么表现？
+    - 流式输出（stream=True）在前端怎么处理，和一次性返回有什么取舍？
+    - 你遇到过 API 超时或限流吗，怎么处理的？
+    - 要让同一个问题每次答案一致，你怎么做？
+    - 一次调用 500 token 大概多少钱，你怎么估算成本？
+  stuck_hint: temperature 不是"随机性开关"，它改的是概率分布的形状；要可复现就用 0
